@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #bb5b5b;
+}
+
+header {
+    background: #333;
+    color: #311313;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(235, 136, 136, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.transform-box {
+    width: 150px;
+    height: 150px;
+    margin: 1rem;
+    background-color: #34c2db;
+    color: #272525;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: 1px solid #2980b9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out;
+}
+
+.transform-box:hover {
+    transform: scale(1.1);
+}
+
+/* Specific Transform Effects */
+.translateX {
+    transform: translateX(50px);
+}
+
+.translateY {
+    transform: translateY(50px);
+}
+
+.rotate {
+    transform: rotate(45deg);
+}
+
+.rotateX {
+    transform: rotateX(45deg);
+}
+
+.rotateY {
+    transform: rotateY(45deg);
+}
+
+.scaleX {
+    transform: scaleX(1.5);
+}
+
+.scaleY {
+    transform: scaleY(1.5);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

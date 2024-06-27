@@ -1,0 +1,132 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #802727;
+}
+
+.typography-section {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ad6565;
+}
+
+.typography-section h2 {
+    margin-bottom: 10px;
+}
+
+/* Font Families */
+.font-sans-serif {
+    font-family: Arial, sans-serif;
+}
+
+.font-serif {
+    font-family: 'Times New Roman', serif;
+}
+
+.font-monospace {
+    font-family: 'Courier New', monospace;
+}
+
+.font-cursive {
+    font-family: 'Comic Sans MS', cursive;
+}
+
+.font-fantasy {
+    font-family: 'Impact', fantasy;
+}
+
+/* Font Sizes */
+.font-small {
+    font-size: 12px;
+}
+
+.font-medium {
+    font-size: 18px;
+}
+
+.font-large {
+    font-size: 24px;
+}
+
+.font-xlarge {
+    font-size: 32px;
+}
+
+.font-xxlarge {
+    font-size: 40px;
+}
+
+/* Font Weights */
+.font-light {
+    font-weight: 300;
+}
+
+.font-normal {
+    font-weight: 400;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-bolder {
+    font-weight: bolder;
+}
+
+.font-black {
+    font-weight: 900;
+}
+
+/* Font Styles */
+.font-normal-style {
+    font-style: normal;
+}
+
+.font-italic {
+    font-style: italic;
+}
+
+.font-oblique {
+    font-style: oblique;
+}
+
+/* Line Height */
+.line-height-normal {
+    line-height: 1.5;
+}
+
+.line-height-large {
+    line-height: 2;
+}
+
+.line-height-xlarge {
+    line-height: 2.5;
+}
+
+/* Text Transform */
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-lowercase {
+    text-transform: lowercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+/* Title Style */
+.title {
+    background-color: #e42ee4;
+    color: rgb(83, 43, 224);
+    padding: 20px 0;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+main {
+    padding: 20px;
+}
+
+.box-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.box {
+    width: 120px;
+    height: 120px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.box:hover {
+    background-color: #0056b3;
+    transform: translateY(-5px);
+}
+
+.box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.box:hover::before {
+    opacity: 1;
+}
+
+.box:nth-child(odd) {
+    background-color: #67099e; /* Blue for odd-numbered boxes */
+}
+
+.box:nth-child(even) {
+    background-color: #28a745; /* Green for even-numbered boxes */
+}
+
+.box:nth-child(odd):hover {
+    background-color: #0056b3; /* Darker blue on hover for odd-numbered boxes */
+}
+
+.box:nth-child(even):hover {
+    background-color: #a2d80d; /* Darker green on hover for even-numbered boxes */
+}

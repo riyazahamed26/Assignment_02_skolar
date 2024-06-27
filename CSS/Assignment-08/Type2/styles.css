@@ -1,0 +1,147 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+    grid-gap: 10px; /* Gap between grid items */
+    padding: 20px; /* Padding around the grid container */
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+/* Specific item styling */
+.item1 { 
+    background-color: #1bbb0c;
+    grid-column: 1 / span 3; /* Span across all three columns */
+    grid-row: 1 / span 2; /* Span two rows */
+    height: 200px;
+    font-size: 24px;
+}
+
+.item2 { 
+    background-color: #e6e20a;
+    grid-column: 3;
+    grid-row: 1;
+    width: 150px;
+    height: 150px;
+    font-size: 16px;
+}
+
+.item3 { 
+    background-color: #e905c3;
+    grid-column: 1;
+    grid-row: 2;
+    height: 100px;
+    font-size: 20px;
+}
+
+.item4 { 
+    background-color: #f0a6ca;
+    grid-column: 2;
+    grid-row: 2;
+    width: 100px;
+    height: 150px;
+    font-size: 14px;
+}
+
+.item5 { 
+    background-color: #3a0658;
+    grid-column: 3;
+    grid-row: 2;
+    height: 120px;
+    font-size: 18px;
+}
+
+.item6 { 
+    background-color: #e90e0e;
+    grid-column: 1;
+    grid-row: 3;
+    width: 150px;
+    height: 100px;
+    font-size: 22px;
+}
+
+.item7 { 
+    background-color: #01203d;
+    grid-column: 2;
+    grid-row: 3;
+    width: 200px;
+    height: 100px;
+    font-size: 16px;
+}
+
+.item8 { 
+    background-color: #f1935c;
+    grid-column: 3;
+    grid-row: 3;
+    width: 100px;
+    height: 200px;
+    font-size: 20px;
+}
+
+.item9 { 
+    background-color: #7bbfea;
+    grid-column: 1;
+    grid-row: 4;
+    width: 150px;
+    height: 150px;
+    font-size: 18px;
+}
+
+.item10 { 
+    background-color: #a29bfe;
+    grid-column: 2;
+    grid-row: 4;
+    width: 120px;
+    height: 120px;
+    font-size: 24px;
+}
+
+.item11 { 
+    background-color: #6c5ce7;
+    grid-column: 3;
+    grid-row: 4;
+    width: 180px;
+    height: 100px;
+    font-size: 14px;
+}
+
+.item12 { 
+    background-color: #fdcb6e;
+    grid-column: 1;
+    grid-row: 5;
+    width: 100px;
+    height: 180px;
+    font-size: 22px;
+}
+
+.item13 { 
+    background-color: #00cec9;
+    grid-column: 2;
+    grid-row: 5;
+    width: 160px;
+    height: 160px;
+    font-size: 18px;
+}
+
+.item14 { 
+    background-color: #6ab04c;
+    grid-column: 3;
+    grid-row: 5;
+    width: 140px;
+    height: 140px;
+    font-size: 20px;
+}
+
+.item15 { 
+    background-color: #640909;
+    grid-column: 1 / span 3;
+    grid-row: 6;
+    height: 250px;
+    font-size: 26px;
+}

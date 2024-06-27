@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations Demonstration</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        main {
+            padding: 2rem;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        section {
+            width: 300px;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        /* Spin Animation */
+        .spin-box {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: #3498db;
+            border-radius: 50%;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Bounce Animation */
+        .bounce-box {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: #e74c3c;
+            border-radius: 10px;
+            animation: bounce 2s ease-in-out infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        /* Fade Animation */
+        .fade-box {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: #2ecc71;
+            opacity: 1;
+            animation: fade 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes fade {
+            0% { opacity: 1; }
+            100% { opacity: 0.2; }
+        }
+
+        /* Slide Animation */
+        .slide-box {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: #f39c12;
+            animation: slide 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(100px); }
+        }
+
+        /* Multiple Animations */
+        .multiple-box {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background-color: #9b59b6;
+            animation: scale 3s ease-in-out infinite, colorChange 6s ease-in-out infinite;
+        }
+
+        @keyframes scale {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.5); }
+        }
+
+        @keyframes colorChange {
+            0% { background-color: #9b59b6; }
+            50% { background-color: #3498db; }
+            100% { background-color: #9b59b6; }
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Animations Demonstration</h1>
+    </header>
+    <main>
+        <section class="spin-animation">
+            <h2>Spin Animation</h2>
+            <div class="spin-box"></div>
+        </section>
+        <section class="bounce-animation">
+            <h2>Bounce Animation</h2>
+            <div class="bounce-box"></div>
+        </section>
+        <section class="fade-animation">
+            <h2>Fade Animation</h2>
+            <div class="fade-box"></div>
+        </section>
+        <section class="slide-animation">
+            <h2>Slide Animation</h2>
+            <div class="slide-box"></div>
+        </section>
+        <section class="multiple-animations">
+            <h2>Multiple Animations</h2>
+            <div class="multiple-box"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 CSS Animations Demonstration</p>
+    </footer>
+</body>
+</html>

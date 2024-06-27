@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index Demonstration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Z-Index Demonstration</h1>
+    </header>
+    <main>
+        <section class="stacking-context">
+            <h2>Stacking Context</h2>
+            <div class="box box1">Box 1 (z-index: 1)</div>
+            <div class="box box2">Box 2 (z-index: 3)</div>
+            <div class="box box3">Box 3 (z-index: 2)</div>
+        </section>
+        <section class="relative-zindex">
+            <h2>Relative Positioning and Z-Index</h2>
+            <div class="rel-box rel-box1">Rel Box 1 (z-index: 5)</div>
+            <div class="rel-box rel-box2">Rel Box 2 (z-index: 10)</div>
+        </section>
+        <section class="absolute-zindex">
+            <h2>Absolute Positioning and Z-Index</h2>
+            <div class="abs-box abs-box1">Abs Box 1 (z-index: 20)</div>
+            <div class="abs-box abs-box2">Abs Box 2 (z-index: 15)</div>
+        </section>
+        <section class="fixed-zindex">
+            <h2>Fixed Positioning and Z-Index</h2>
+            <div class="fixed-box fixed-box1">Fixed Box 1 (z-index: 100)</div>
+            <div class="fixed-box fixed-box2">Fixed Box 2 (z-index: 50)</div>
+        </section>
+        <section class="sticky-zindex">
+            <h2>Sticky Positioning and Z-Index</h2>
+            <div class="sticky-container">
+                <div class="sticky-box sticky-box1">Sticky Box 1 (z-index: 30)</div>
+                <div class="sticky-box sticky-box2">Sticky Box 2 (z-index: 25)</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Z-Index Demonstration</p>
+    </footer>
+</body>
+</html>

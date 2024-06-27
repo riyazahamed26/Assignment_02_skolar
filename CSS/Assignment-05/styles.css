@@ -1,0 +1,41 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #34495e;
+    color: rgb(224, 79, 193);
+    text-align: center;
+    padding: 20px 0;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Center items vertically */
+    background-color: #26d1c9;
+    padding: 20px;
+    border: 1px solid #bd5b5b;
+}
+
+.box {
+    background-color: #3498db;
+    color: rgb(85, 37, 37);
+    padding: 20px;
+    text-align: center;
+    flex: 1; /* Allow the boxes to grow and fill the container */
+    margin: 10px;
+}
+
+/* Footer styles */
+.footer p {
+    margin: 0;
+}

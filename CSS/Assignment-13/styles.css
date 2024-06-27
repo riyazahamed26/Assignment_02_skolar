@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Color Transition */
+.color-btn {
+    background-color: #3498db;
+    color: #fff;
+    transition: color 0.5s ease-in-out;
+}
+
+.color-btn:hover {
+    color: #3498db;
+    background-color: #fff;
+    border: 2px solid #3498db;
+}
+
+/* Background Color Transition */
+.background-btn {
+    background-color: #e74c3c;
+    color: #fff;
+    transition: background-color 0.5s ease-in-out 0.2s;
+}
+
+.background-btn:hover {
+    background-color: #af5531;
+}
+
+/* Width Transition */
+.width-box {
+    width: 100px;
+    height: 100px;
+    background-color: #2ecc71;
+    margin: 1rem auto;
+    transition: width 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.width-box:hover {
+    width: 200px;
+}
+
+/* Height Transition */
+.height-box {
+    width: 100px;
+    height: 100px;
+    background-color: #f39c12;
+    margin: 1rem auto;
+    transition: height 1s ease-in-out 0.3s;
+}
+
+.height-box:hover {
+    height: 200px;
+}
+
+/* Multiple Transitions */
+.multiple-box {
+    width: 100px;
+    height: 100px;
+    background-color: #8e44ad;
+    margin: 1rem auto;
+    transition: width 1s ease-in-out, height 1s ease-in-out 0.5s, background-color 0.5s ease-in-out 1s;
+}
+
+.multiple-box:hover {
+    width: 200px;
+    height: 200px;
+    background-color: #9b59b6;
+}

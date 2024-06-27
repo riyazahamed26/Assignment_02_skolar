@@ -1,0 +1,255 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container, .content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+/* Massive Heading Section */
+.massive-heading {
+    background: linear-gradient(45deg, #ff6b6b, #f94d6a, #ff8566);
+    color: #fff;
+    padding: 60px 20px;
+}
+
+.massive-heading .colorful-text {
+    color: #ffe66d;
+}
+
+.massive-heading p {
+    font-size: 1.2rem;
+    margin: 10px 0 20px;
+}
+
+.massive-heading .btn-primary {
+    background-color: #ffd700;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.massive-heading .btn-primary:hover {
+    background-color: #ffc107;
+}
+
+/* Grid System */
+.grid-system .row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.grid-system .col {
+    flex: 1;
+    padding: 10px;
+}
+
+.grid-system .col-6 {
+    flex: 0 0 calc(50% - 20px);
+}
+
+.grid-system .col-4 {
+    flex: 0 0 calc(33.33% - 20px);
+}
+
+/* Card Styles */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+    padding: 20px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+}
+
+.card-footer {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    text-align: right;
+}
+
+.card-footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.card-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Specific Card Background Colors */
+.card.bg-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.card.bg-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.card.bg-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.card.bg-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.card.bg-warning {
+    background-color: #ffc107;
+    color: #333;
+}
+
+/* Button Styles */
+.btn {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 4px;
+}
+
+.btn:hover {
+    filter: brightness(0.9);
+}
+
+/* Specific Button Styles */
+.btn-on-off {
+    background-color: #28a745; /* Green */
+    color: #fff;
+}
+
+.btn-switch {
+    background-color: #6610f2; /* Purple */
+    color: #fff;
+}
+
+.btn-scroll {
+    background-color: #20c997; /* Teal */
+    color: #fff;
+}
+
+.btn-toggle {
+    background-color: #ffc107; /* Yellow */
+    color: #333;
+}
+
+.btn-expanding {
+    background-color: #007bff; /* Blue */
+    color: #fff;
+}
+
+.btn-floating {
+    background-color: #dc3545; /* Red */
+    color: #fff;
+}
+
+.btn.active {
+    transform: scale(1.1); /* Example: Scale effect on active state */
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Toggle Buttons */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}

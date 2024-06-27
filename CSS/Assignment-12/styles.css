@@ -1,0 +1,195 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.box, .rel-box, .abs-box, .fixed-box, .sticky-box {
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    border-radius: 5px;
+    position: absolute;
+    transition: transform 0.3s ease;
+}
+
+.box:hover, .rel-box:hover, .abs-box:hover, .fixed-box:hover, .sticky-box:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Stacking Context */
+.stacking-context {
+    position: relative;
+    height: 300px;
+    border: 1px solid #ddd;
+    margin-bottom: 3rem;
+    background: #fafafa;
+}
+
+.box1 {
+    background-color: #3498db;
+    z-index: 1;
+    top: 50px;
+    left: 50px;
+}
+
+.box2 {
+    background-color: #e74c3c;
+    z-index: 3;
+    top: 100px;
+    left: 100px;
+}
+
+.box3 {
+    background-color: #2ecc71;
+    z-index: 2;
+    top: 150px;
+    left: 150px;
+}
+
+/* Relative Positioning and Z-Index */
+.relative-zindex {
+    position: relative;
+    height: 300px;
+    border: 1px solid #ddd;
+    margin-bottom: 3rem;
+    background: #fafafa;
+}
+
+.rel-box1 {
+    background-color: #9b59b6;
+    z-index: 5;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.rel-box2 {
+    background-color: #f39c12;
+    z-index: 10;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+/* Absolute Positioning and Z-Index */
+.absolute-zindex {
+    position: relative;
+    height: 300px;
+    border: 1px solid #ddd;
+    margin-bottom: 3rem;
+    background: #fafafa;
+}
+
+.abs-box1 {
+    background-color: #34495e;
+    z-index: 20;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+.abs-box2 {
+    background-color: #d35400;
+    z-index: 15;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+/* Fixed Positioning and Z-Index */
+.fixed-zindex {
+    position: relative;
+    height: 300px;
+    border: 1px solid #ddd;
+    margin-bottom: 3rem;
+    background: #fafafa;
+}
+
+.fixed-box1 {
+    background-color: #c0392b;
+    z-index: 100;
+    position: fixed;
+    bottom: 150px;
+    left: 20px;
+}
+
+.fixed-box2 {
+    background-color: #27ae60;
+    z-index: 50;
+    position: fixed;
+    bottom: 100px;
+    left: 70px;
+}
+
+/* Sticky Positioning and Z-Index */
+.sticky-zindex {
+    height: 1500px;
+    border: 1px solid #ddd;
+    padding-top: 2rem;
+    background-color: #f8f8f8;
+}
+
+.sticky-box1 {
+    background-color: #2980b9;
+    z-index: 30;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 10px;
+}
+
+.sticky-box2 {
+    background-color: #8e44ad;
+    z-index: 25;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 60px;
+}

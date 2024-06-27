@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 17: Styling Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Styling Forms</h1>
+    </header>
+    <main>
+        <form action="#">
+            <div class="form-group">
+                <input type="text" id="username" name="username" required>
+                <label class="animated" for="username">Username</label>
+            </div>
+            
+            <div class="form-group">
+                <input type="email" id="email" name="email" required>
+                <label class="animated" for="email">Email</label>
+            </div>
+            
+            <div class="form-group">
+                <input type="password" id="password" name="password" required>
+                <label class="animated" for="password">Password</label>
+            </div>
+            
+            <div class="form-group">
+                <input type="checkbox" id="checkbox" name="subscribe">
+                <label for="checkbox">Subscribe to Newsletter</label>
+            </div>
+            
+            <div class="form-group">
+                <select id="select" name="select">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+                <label class="animated" for="select">Select Option</label>
+            </div>
+            
+            <div class="button-wrapper">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,55 @@
+/* Element selector - styles all paragraphs */
+p {
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Class selector - styles elements with the class "highlight" */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/* ID selector - styles the element with the id "unique-heading" */
+#unique-heading {
+    color: red;
+    text-transform: uppercase;
+}
+
+/* Attribute selector - styles elements with the "data-type" attribute */
+[data-type="special"] {
+    border: 2px solid green;
+    padding: 10px;
+}
+
+/* Pseudo-class selector - styles the first child paragraph */
+p:first-child {
+    font-style: italic;
+}
+
+/* Pseudo-element selector - styles the first letter of each paragraph */
+p::first-letter {
+    font-size: 200%;
+    color: orange;
+}
+
+/* Specific styles for each paragraph */
+.paragraph-1 {
+    border: 2px dashed blue;
+}
+
+.paragraph-2 {
+    border: 2px solid black;
+    background-color: #f0f0f0;
+}
+
+.paragraph-3 {
+    border: 2px dotted red;
+    background-color: #e0ffe0;
+}
+
+.subheading-paragraph {
+    border: 2px solid purple;
+    background-color: #ffe0f0;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic CSS Variables</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Dynamic Website</h1>
+    </header>
+    <main>
+        <section>
+            <h2>About Us</h2>
+            <p>We are a company that values consistency and design.</p>
+        </section>
+        <section>
+            <h2>Services</h2>
+            <p>We offer a variety of services to meet your needs.</p>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+    <div class="controls">
+        <h3>Customize the Page</h3>
+        <label for="primaryColor">Primary Color:</label>
+        <input type="color" id="primaryColor" name="primaryColor">
+
+        <label for="secondaryColor">Secondary Color:</label>
+        <input type="color" id="secondaryColor" name="secondaryColor">
+
+        <label for="fontSize">Font Size:</label>
+        <input type="range" id="fontSize" name="fontSize" min="12" max="48" value="16">
+
+        <label for="fontStyle">Font Style:</label>
+        <select id="fontStyle" name="fontStyle">
+            <option value="Arial">Arial</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Times New Roman">Times New Roman</option>
+            <option value="Verdana">Verdana</option>
+        </select>
+
+        <label for="bold">Bold:</label>
+        <input type="checkbox" id="bold" name="bold">
+
+        <label for="italic">Italic:</label>
+        <input type="checkbox" id="italic" name="italic">
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
